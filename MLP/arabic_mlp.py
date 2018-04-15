@@ -18,12 +18,12 @@ from tflearn.data_utils import to_categorical
 #Importation des donnees a partir des fichiers csv
 
 #Donnees d'entrainement
-trainx =pd.read_csv('./csvTrainImages 13440x1024.csv',header=None)
-trainy =pd.read_csv('./csvTrainLabel 13440x1.csv',header=None)
+trainx =pd.read_csv('./input/csvTrainImages 13440x1024.csv',header=None)
+trainy =pd.read_csv('./input/csvTrainLabel 13440x1.csv',header=None)
 
 #Donnees de test
-testx =pd.read_csv('./csvTestImages 3360x1024.csv',header=None)
-testy =pd.read_csv('./csvTestLabel 3360x1.csv',header=None)
+testx =pd.read_csv('./input/csvTestImages 3360x1024.csv',header=None)
+testy =pd.read_csv('./input/csvTestLabel 3360x1.csv',header=None)
 
 #Mise a l'echelle des donnees
 trainx = trainx.values.astype('float32')/255
